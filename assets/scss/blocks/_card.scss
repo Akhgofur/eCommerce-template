@@ -1,0 +1,131 @@
+.card {
+    padding: 16px;
+    border: 1px solid #D1D1D1;
+    border-radius: 12px;
+    max-width: 270px;
+    min-width: 220px;
+    width: 100%;
+}
+.card__img-wrapper {
+    max-width: 237px;
+    max-height: 180px;
+    background-color: #F9F9F9;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.card__discount {
+    margin: 0;
+    padding: 0 8px;
+
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    background: #F4F8EC;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+}
+.card__heading {
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+}
+.card__desc {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.card__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card__price {
+    margin: 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.card__old-price {
+    margin: 0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration-line: line-through;
+    color: #A9A9A9;
+}
+.card__btn {
+    margin: 0;
+    padding: 6px 12px;
+    background-color: #6A983C;
+    border-radius: 12px;
+    border: 2px solid #46760A;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.card--big{
+    max-width: 420px;
+    min-width: 280px;
+    width: 100%;
+    padding: 48px 33px 33px;
+    border-radius: 12px;
+    background-image: url(../img/card-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #F4F8EC;
+}
+.card--big__banner {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #6A983C;
+}
+.card--big__heading {
+    margin: 0;
+    margin-bottom: 94px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #151515;
+}
+.card--big__link {
+    margin: 0;
+    border: 2px solid #92C064;
+    border-radius: 12px;
+    padding: 12px 16px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: #151515;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    &::after {
+        display: inline-block;
+        content: url(../img/arrow-down.svg);
+        transform: rotate(-90deg);
+        margin-left: 6px;
+        height: 16px;
+    }
+}

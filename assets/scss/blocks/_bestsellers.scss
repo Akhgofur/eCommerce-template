@@ -1,0 +1,34 @@
+.bestsellers__container {
+    display: flex;
+    align-items: flex-start;
+}
+.bestsellers__categories {
+    margin-right: 32px;
+}
+.bestsesllers__cards-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-grow: 1;
+}
+
+@include breakpoint-down(750px) {
+    .bestsesllers__cards-wrapper {
+        flex-direction: column;
+    }
+    .bestsellers__card {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        .card__heading {
+            font-size: 20px;
+        }
+        .card__desc {
+            font-size: 15px;
+        }
+        .card__img-wrapper {
+            margin-right: 30px;
+        }
+    }
+}
